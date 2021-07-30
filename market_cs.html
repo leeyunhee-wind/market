@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>고객센터</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/mobile_reset.css">
+    <link rel="stylesheet" href="css/market.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#-"> <span class="hide">뒤로가기</span></a>
+            <h2 class="titsub txtcenter">고객센터</h2>
+        </header>
+        <div class="acc_bx">
+        
+            <ul class="acco">
+                <li class="item">
+                    <h2 class="acc_tit qu">배달 가능한 지역인데 시장선택이 안되요<span class="acc_icon"></span></h2>
+                    <div class="text">코로나19백신 늦게 맞아도 될까? 당뇨병 있다면 안돼요!
+코로나19백신 좀 늦게 맞아도 될까요? 당뇨병 있다면 안돼요! </div>
+                </li>
+                <li class="item">
+                    <h2 class="acc_tit qu">물품이 안왔어요 <span class="acc_icon"></span></h2>
+                    <div class="text">코로나19백신 늦게 맞아도 될까? 당뇨병 있다면 안돼요!
+코로나19백신 좀 늦게 맞아도 될까요? 당뇨병 있다면 안돼요!</div>
+                </li>
+                <li class="item">
+                    <h2 class="acc_tit qu">결제는 완료되었지만, 주문된 내역에 나오지 않아요<span class="acc_icon"></span></h2>
+                    <div class="text ">코로나19백신 늦게 맞아도 될까? 당뇨병 있다면 안돼요!
+코로나19백신 좀 늦게 맞아도 될까요? 당뇨병 있다면 안돼요!</div>
+                </li>
+                 <li class="item">
+                    <h2 class="acc_tit qu">결제는 완료되었지만, 주문된 내역에 나오지 않아요<span class="acc_icon"></span></h2>
+                    <div class="text ">코로나19백신 늦게 맞아도 될까? 당뇨병 있다면 안돼요!
+코로나19백신 좀 늦게 맞아도 될까요? 당뇨병 있다면 안돼요!</div>
+                </li>
+                 <li class="item">
+                    <h2 class="acc_tit qu">결제는 완료되었지만, 주문된 내역에 나오지 않아요<span class="acc_icon"></span></h2>
+                    <div class="text ">코로나19백신 늦게 맞아도 될까? 당뇨병 있다면 안돼요!
+코로나19백신 좀 늦게 맞아도 될까요? 당뇨병 있다면 안돼요!</div>
+                </li>
+                 <li class="item">
+                    <h2 class="acc_tit qu">결제는 완료되었지만, 주문된 내역에 나오지 않아요<span class="acc_icon"></span></h2>
+                    <div class="text ">코로나19백신 늦게 맞아도 될까? 당뇨병 있다면 안돼요!
+코로나19백신 좀 늦게 맞아도 될까요? 당뇨병 있다면 안돼요!</div>
+                </li>
+
+            </ul>
+      
+        </div>
+       <div class="space100_mb"></div>
+         <div class="bigbtn btn_fixed">
+            <button class="put_btn" ><span><a href="mailto:mail@example.com">email 보내기</a></span></button>
+        </div>
+        
+    </div>
+     <script>
+        // variables
+        var accordionBtn = document.querySelectorAll('.acc_tit');
+        var allTexts = document.querySelectorAll('.text');
+        var accIcon = document.querySelectorAll('.acc_icon');
+
+        // event listener
+        accordionBtn.forEach(function(el) {
+            el.addEventListener('click', toggleAccordion)
+        });
+
+        // function
+        function toggleAccordion(el) {
+            var targetText = el.currentTarget.nextElementSibling.classList;
+            var targetAccIcon = el.currentTarget.children[0];
+            var target = el.currentTarget;
+
+            if (targetText.contains('show')) {
+                targetText.remove('show');
+                targetAccIcon.classList.remove('anime');
+                target.classList.remove('accordionTitleActive');
+            } else {
+                accordionBtn.forEach(function(el) {
+                    el.classList.remove('accordionTitleActive');
+
+                    allTexts.forEach(function(el) {
+                        el.classList.remove('show');
+                    })
+
+                    accIcon.forEach(function(el) {
+                        el.classList.remove('anime');
+                    })
+
+                })
+
+                targetText.add('show');
+                target.classList.add('accordionTitleActive');
+                targetAccIcon.classList.add('anime');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

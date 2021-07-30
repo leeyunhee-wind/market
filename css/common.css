@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@font-face {
+
+  font-family: 'NotoSansKR';
+  src: url('../font/NotoSansKR-Regular.woff2'),
+  url('../font/NotoSansKR-Regular.woff') format('woff'),
+  url('../font/NotoSansKR-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+@font-face {
+
+  font-family: 'NotoSansKR';
+  src: url('../font/NotoSansKR-Medium.woff2'),
+  url('../font/NotoSansKR-Medium.woff') format('woff'),
+  url('../font/NotoSansKR-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  }
+
+  @font-face {
+
+    font-family: 'NotoSansKR';
+    src: url('../font/NotoSansKR-Bold.woff2'),
+    url('../font/NotoSansKR-Bold.woff') format('woff'),
+    url('../font/NotoSansKR-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    
+  }
+
+.hide{display:none;font-size:0}
+b.onnuri_mark{font-size:12px;color:#fff;display:block;width:50px;height:20px;background:#0ac065;text-align:center;line-height:20px;border-radius: 5px;font-weight:normal;}
+
+.bigbtn{width:100%;}
+.bigbtn .put_btn{width:100%; line-height:60px;height:60px;background:#37490d;outline:0;}
+.bigbtn .put_btn span{font-size:20px;color:#fff}
+
+.middlebtn{width:100%;padding:0 10px;}
+.middlebtn .put_btn{width:100%; line-height:60px;height:60px;background:#37490d;border-radius:4px;outline:0;}
+.middlebtn .put_btn span{font-size:20px;color:#fff}
+
+.linebtn{width:100%;padding:0 0px;}
+.linebtn .put_btn{width:100%; line-height:40px;height:40px;border:1px solid #668a19;border-radius:4px;outline:0;}
+.linebtn .put_btn span{font-size:16px;color:#37490d}
+.linebtn .put_btn span::before{content: "";display:inline-block;width:20px;height:20px;background:url(../images/market/ic_green_plus.png) no-repeat center center;background-size:20px auto;vertical-align:-4px;margin:0 5px 0 0}
+
+.twobtn{text-align:center;}
+.twobtn a{float:left;width:50%; display:block;line-height:40px;height:40px;border:1px solid #668a19;background:#fff;outline:0;color:#668a19;}
+.twobtn a.on{background:#668a19;color:#fff;}
+.twobtn::before,.twobtn::after{content:"";display:block;}
+.twobtn::after{clear:both;}
+.btn_fixed{position:fixed;width:100%;bottom:0}
+#topBtn {display: none;position: fixed;bottom: 70px;right: 10px;z-index: 99;border:1px solid #dbdbdb;outline: none;width:36px;height:36px;background :url(../images/market/gototop.png) no-repeat center center #fff;background-size:20px 20px;cursor: pointer;padding: 10px;border-radius: 18px;}
+#topBtn:hover {background-color: #555;}
+.space10_mt{margin-top:10px;}
+.space100_mb{margin-bottom:100px;}
+.layer01{width:100%;height:100%;position:fixed;z-index:99999;background:rgba(0,0,0,0.7);top:0:left:0;}
+.layer02{position:absolute;margin:0 auto;width:80%;min-height:150px;top:30%;left:10%;background:#fff;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;border-top-left-radius: 4px;border-top-right-radius: 4px; font-size:14px}
+.layer02 .layer_con{position:relative;}
+.layer02 .layer_con p{border-bottom:1px solid #dbdbdb;padding:10px 0;text-indent:20px;font-size:16px}
+.layer02 .layer_con span{display:inline-block;padding:20px 10px;}
+.layer02 .layer_con span.question{width:100%;padding:10px 0px;border-top:1px dotted #dbdbdb;text-align: center;}
+.layer02 .close{position:absolute;top:10px;right:10px;width:24px;height:24px;background:url(../images/market/close_btn.png) no-repeat center;background-size:100% auto}
+.layer02 .layer_con img{width:100%;height:60px;object-fit:cover;}
+.layer02 .layer_con em.imgsize{display:inline-block;width:60px;height:60px;vertical-align:middle;padding-right:20px;}
+.popup_btn{width:100%;text-align:center}
+.popup_btn .put_one_btn{float:left;width:100%; height:50px;line-height:50px;background:#37490d;outline:0;color:#fff;border-bottom-left-radius: 4px;border-bottom-right-radius: 4px}
+.popup_btn .put_two_btn{float:left;width:50%; height:50px;line-height:50px;background:#37490d;outline:0;border-bottom-right-radius: 4px}
+.popup_btn .put_two_btn1{float:left;width:50%; height:50px;line-height:50px;border:1px solid #dbdbdb;background:#eeeeee;outline:0;border-bottom-left-radius: 4px;}
+.popup_btn .put_two_btn1 em{font-size:14px;color:#000;}
+.popup_btn .put_two_btn em{font-size:14px;color:#fff;}
+footer{clear:both;padding:30px 20px 100px 20px;margin-top:50px;line-height:1.3em;background:#eeeeee}
+footer p{font-size:14px}
+footer span{display:block;}
+footer span.copy{letter-spacing:-1px;}
+footer span.notice{padding-top:20px}
+.ft14{font-size:14px;}
+
+/*sidemenu body scroll stop*/
+.hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
